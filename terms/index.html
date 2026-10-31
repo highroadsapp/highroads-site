@@ -20,7 +20,9 @@
     h3 { font-size: 19px; margin: 28px 0 8px; }
     p, li { color: #D5DAE1; }
     strong { color: var(--text); }
-    ul { padding-left: 22px; }
+    ul, ol { padding-left: 22px; }
+    li:has(> .box) { list-style: none; margin-left: -22px; }
+    .box { display: inline-block; width: 15px; height: 15px; margin-right: 10px; vertical-align: -2px; border: 2px solid var(--amber); border-radius: 4px; }
     li { margin: 6px 0; }
     hr { border: 0; border-top: 1px solid rgba(154, 164, 178, 0.16); margin: 36px 0; }
     blockquote { margin: 0 0 24px; padding: 14px 18px; border-left: 3px solid var(--amber); background: var(--panel); border-radius: 0 12px 12px 0; color: var(--amber-soft); }
